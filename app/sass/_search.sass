@@ -1,0 +1,33 @@
+.search
+    position: relative
+    display: flex
+
+    &:hover
+        input
+            width: 200px
+            border: 2px solid #464646
+                radius: 50px
+
+    input
+        width: 30px
+        height: 30px
+        padding-left: 10px
+        outline: none
+        border: none
+        transition: width .6s ease
+
+        &:focus,
+        &:active
+            width: 200px
+            border: 2px solid #464646
+                radius: 50px
+
+.search__btn
+    position: absolute
+    top: 5px
+    right: 5px
+    display: block
+    width: 20px
+    height: 20px
+    z-index: 1
+    background: url('../img/search__btn.png') no-repeat center

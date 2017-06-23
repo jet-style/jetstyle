@@ -1,0 +1,70 @@
+$btn-red: #ff5757
+
+.header
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 100px
+
+    .header__c-wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 1170px
+        margin: auto
+
+    .header__logo
+        width: 50px
+        height: 50px
+        background: url("../img/header__logo.png") no-repeat center
+        transition: background .8s ease
+
+        &:hover
+            background: url("../img/header__logo_hover.png") no-repeat center
+
+    .header__license
+        margin-right: 60px
+        text:
+            transform: uppercase
+            decoration: none
+        color: #464646
+        font:
+            weight: 500
+            size: .8rem
+        border-bottom: 1px dotted #464646
+        transition: color .2s ease
+
+        &:hover
+            border: none
+            color: $btn-red
+
+.header__contacts
+    display: flex
+    justify-content: space-between
+    width: 500px
+    margin:
+        left: auto
+        right: 70px
+    color: #4d4d4d
+
+    p
+        margin-bottom: 5px
+        font-size: .8rem
+
+    b
+        font-weight: 500
+
+
+
+
+
+
+
+
+
+
+
+
+
+

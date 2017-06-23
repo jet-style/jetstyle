@@ -1,0 +1,78 @@
+$btn-red: #ff5757
+$btn-blue: #7cacd4
+$btn-fsize: .8rem
+$btn-fcolor: #fff
+
+.btn
+    width: 170px
+    height: 40px
+    background: $btn-red
+    outline: none
+    border: none
+        radius: 50px
+    font:
+        size: $btn-fsize
+        weight: bold
+    color: $btn-fcolor
+    text-transform: uppercase
+    transition: background .4s ease
+
+    &:hover
+        background: lighten($btn-red, 5%)
+        cursor: pointer
+
+    &:active
+        box-shadow: inset 0 2px 2px darken($btn-red, 7%)
+        text-shadow: 0 3px 2px darken($btn-red, 7%)
+
+.btn_demo
+    display: block
+    width: 190px
+    background: none
+    text:
+        align: center
+        decoration: none
+    line-height: 40px
+    vertical-align: middle
+    box-shadow: inset 0px 0px 0px 2px #fff
+
+    &:hover
+        background: #fff
+        color: $btn-blue
+
+    &:active
+        box-shadow: inset 0 0 4px 1px rgba(#000, .1)
+        text-shadow: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

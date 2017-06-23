@@ -23,8 +23,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 
 <!-- links -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 
     <title>Система «Jetstyle»</title>
 
@@ -37,29 +37,27 @@
         <div class="header__c-wrapper">
             <div class="header__logo"></div>
 
-            <div class="contacts">
-                <div class="contacts__item">
+            <div class="header__contacts">
+                <div>
                     <p>Екатеринбург</p>
                     <b>+7 (343) 237-23-19</b>
                 </div>
-                <div class="contacts__item">
+                <div>
                     <p>Москва</p>
                     <b>+7 (495) 789-37-36</b>
                 </div>
-                <div class="contacts__item">
+                <div>
                     <p>Санкт-Петербург</p>
                     <b>+7 (812) 716-4-888</b>
                 </div>
             </div>
 
-            <div class="license">
-                <a href="#">Продлить лицензию</a>
-            </div>
+            <a href="#" class="header__license">Продлить лицензию</a>
 
             <form action="#" method="#" class="search">
-                <input class="search__input" type="search" id="search-input">
-                <label for="search-input"></label>
                 <a href="#" class="search__btn"></a>
+                <input class="search__input" type="search" id="search-input">
+
             </form>
         </div>
     </header>
@@ -98,13 +96,13 @@
                 </a>
             </li>
             <li class="menu__item">
-                <a href="#" class="menu__link btn btn_demo">
+                <a href="#" class="btn btn_demo">
                     скачать демоверсию
                 </a>
             </li>
-            <li class="menu__item">
-                <a href="#" class="basket"></a>
-                <a href="#" class="basket__value">4</a>
+            <li class="menu__item basket">
+                <p class="basket__value">4</p>
+                <a href="#" class="basket__icon"></a>
             </li>
         </ul>
     </nav>
@@ -118,7 +116,7 @@
                 помощь в&nbsp;оптимизации автобизнеса
             </h2>
             <ul>
-                <li class="optim__item">
+                <li class="optim__item optim__item_first">
                     <div class="optim__icon optim__icon_1"></div>
                     <p class="optim__desc">
                         Учет запасных частей и&nbsp;материалов
@@ -136,7 +134,7 @@
                         Нормы времени ремонта
                     </p>
                 </li>
-                <li class="optim__item">
+                <li class="optim__item optim__item_last">
                     <div class="optim__icon optim__icon_4"></div>
                     <p class="optim__desc">
                         Запись на&nbsp;ремонт и&nbsp;CRM
@@ -173,7 +171,7 @@
                         Демоверсия
                     </button>
                     <a href="#" class="solution-card__link">
-                        Подробнее
+                        Подробнеe
                     </a>
                 </div>
 
@@ -244,7 +242,7 @@
     <div class="feedback">
         <div class="feedback__c-wrapper">
             <h2 class="block-title feedback__title">
-                помощь в&nbsp;оптимизации автобизнеса
+                не&nbsp;нашли подходящего решения?
             </h2>
             <p class="feedback__desc">
                 Расскажите нам о&nbsp;вашем бизнесе и&nbsp;мы&nbsp;сами подберем для вас оптимальное решение с&nbsp;необходимым набором модулей.
@@ -264,21 +262,21 @@
                 </div>
                 <div class="feedback-form__line feedback-form__line_2">
                     <select class="feedback-form__select feedback-form__select_small" name="city" id="city" required>
-                        <option disabled>Размер города</option>
+                        <option>Размер города</option>
                         <option value="#">до 100 тыс.</option>
                         <option value="#">100 - 500 тыс.</option>
                         <option value="#">500 тыс. - 1 млн.</option>
                         <option value="#">свыше 1 млн.</option>
                     </select>
                     <select class="feedback-form__select feedback-form__select_small" name="people" id="people" required>
-                        <option disabled>Количество людей</option>
+                        <option>Количество людей</option>
                         <option value="#">до 10 чел.</option>
                         <option value="#">10 - 50 чел.</option>
                         <option value="#">50 - 100 чел.</option>
                         <option value="#">свыше 100 чел.</option>
                     </select>
                     <select class="feedback-form__select feedback-form__select_small" name="lifts" id="lifts" required>
-                        <option disabled>Подъемники</option>
+                        <option>Подъемники</option>
                         <option value="#">Красные</option>
                         <option value="#">Зеленые</option>
                         <option value="#">Синие</option>
@@ -288,7 +286,7 @@
                         <option value="#">Исправные</option>
                     </select>
                     <select class="feedback-form__select feedback-form__select_small" name="places" id="places" required>
-                        <option disabled>Кол-во точек</option>
+                        <option>Кол-во точек</option>
                         <option value="#">1 - 3 точки</option>
                         <option value="#">3 - 5 точек</option>
                         <option value="#">5 - 10 точек</option>

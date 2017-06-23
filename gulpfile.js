@@ -16,7 +16,7 @@ var gulp         = require( 'gulp' ),
 gulp.task( 'sass', function() {
 
     return gulp.src( 'app/sass/**/*.sass' )
-        .pipe( sass() )
+        .pipe( sass({outputStyle: 'expanded'}).on('error', sass.logError) )
         .pipe( autoprefixer( ['last 4 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true} ) )
         .pipe( gulp.dest( 'app/css' ) )
         .pipe( browserSync.reload( {stream: true} ) )
@@ -39,7 +39,9 @@ gulp.task( 'browser-sync', function() {
 // сбор всех библиотек в один файл
 gulp.task( 'scripts', function() {
 
-    return gulp.src ( ['app/libs/jquery/dist/jquery.min.js'] )
+    return gulp.src (
+        ['app/libs/jquery/dist/jquery.min.js']
+        ['app/libs/owl.carousel/dist/owl.carousel.min.js'] )
 
         .pipe( concat( 'libs.min.js' ) )
         .pipe( uglify() )
@@ -59,7 +61,7 @@ gulp.task( 'css-libs', ['sass'], function() {
 
 
 // наблюдение за изменениями
-gulp.task( 'watch', ['browser-sync', 'css-libs', 'scripts' ], function() {
+gulp.task( 'watch', ['browser-sync', 'css-libs'], function() {
 
     gulp.watch( 'app/sass/**/*.sass', ['sass'] )
     gulp.watch( 'app/*.html', browserSync.reload )
