@@ -17,13 +17,15 @@
 
 <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64x64.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="64x64" href="img/favicon-64.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
 
 <!-- links -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 
     <title>Система «Jetstyle»</title>
@@ -108,6 +110,73 @@
     </nav>
 
 <!-- slider -->
+    <div class="slider">
+        <div class="slider__c-wrapper">
+            <div class="owl-carousel owl-theme">
+
+                <div class="slide">
+                    <div class="slide__desc">
+                        <h1 class="slide__title">
+                            Система<br>«jetstyle»
+                        </h1>
+                        <p class="slide__text">
+                            Предназначена для автоматизации вашего автобизнеса. Это гибкая программа, состоит из&nbsp;<a href="#">6&nbsp;модулей</a>, каждый из&nbsp;которых вы&nbsp;можете приобрести по&nbsp;отдельности.
+                        </p>
+                        <button class="btn">
+                            подробнее
+                        </button>
+                    </div>
+                    <img src="img/slide__diagramm.png" alt="diagramm" class="slide__diagramm">
+                </div>
+
+                <div class="slide">
+                    <div class="slide__desc">
+                        <h1 class="slide__title">
+                            Система<br>«jetstyle»
+                        </h1>
+                        <p class="slide__text">
+                            Предназначена для автоматизации вашего автобизнеса. Это гибкая программа, состоит из&nbsp;<a href="#">6&nbsp;модулей</a>, каждый из&nbsp;которых вы&nbsp;можете приобрести по&nbsp;отдельности.
+                        </p>
+                        <button class="btn">
+                            подробнее
+                        </button>
+                    </div>
+                    <img src="img/slide__diagramm.png" alt="diagramm" class="slide__diagramm">
+                </div>
+
+                <div class="slide">
+                    <div class="slide__desc">
+                        <h1 class="slide__title">
+                            Система<br>«jetstyle»
+                        </h1>
+                        <p class="slide__text">
+                            Предназначена для автоматизации вашего автобизнеса. Это гибкая программа, состоит из&nbsp;<a href="#">6&nbsp;модулей</a>, каждый из&nbsp;которых вы&nbsp;можете приобрести по&nbsp;отдельности.
+                        </p>
+                        <button class="btn">
+                            подробнее
+                        </button>
+                    </div>
+                    <img src="img/slide__diagramm.png" alt="diagramm" class="slide__diagramm">
+                </div>
+
+                <div class="slide">
+                    <div class="slide__desc">
+                        <h1 class="slide__title">
+                            Система<br>«jetstyle»
+                        </h1>
+                        <p class="slide__text">
+                            Предназначена для автоматизации вашего автобизнеса. Это гибкая программа, состоит из&nbsp;<a href="#">6&nbsp;модулей</a>, каждый из&nbsp;которых вы&nbsp;можете приобрести по&nbsp;отдельности.
+                        </p>
+                        <button class="btn">
+                            подробнее
+                        </button>
+                    </div>
+                    <img src="img/slide__diagramm.png" alt="diagramm" class="slide__diagramm">
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 <!-- optimization -->
     <div class="optim">
@@ -248,8 +317,11 @@
                 Расскажите нам о&nbsp;вашем бизнесе и&nbsp;мы&nbsp;сами подберем для вас оптимальное решение с&nbsp;необходимым набором модулей.
             </p>
             <form class="feedback-form" action="#" method="#">
+
                 <div class="feedback-form__line feedback-form__line_1">
-                    <select class="feedback-form__select feedback-form__select_big" name="bisiness" id="bisiness" required>
+
+                    <div class="feedback-form__select-wrapper feedback-form__select-wrapper_big">
+                        <select class="feedback-form__select feedback-form__select_big" name="bisiness" id="bisiness" required>
                         <option>Вид бизнеса</option>
                         <option value="#">Магазин автозапчастей</option>
                         <option value="#">Интернет-магазин</option>
@@ -258,46 +330,70 @@
                         <option value="#">Шиномонтаж</option>
                         <option value="#">Мастерская</option>
                         <option value="#">Автомойка</option>
-                    </select>
+                        </select>
+                    </div>
+
                 </div>
+
                 <div class="feedback-form__line feedback-form__line_2">
-                    <select class="feedback-form__select feedback-form__select_small" name="city" id="city" required>
-                        <option>Размер города</option>
-                        <option value="#">до 100 тыс.</option>
-                        <option value="#">100 - 500 тыс.</option>
-                        <option value="#">500 тыс. - 1 млн.</option>
-                        <option value="#">свыше 1 млн.</option>
-                    </select>
-                    <select class="feedback-form__select feedback-form__select_small" name="people" id="people" required>
-                        <option>Количество людей</option>
-                        <option value="#">до 10 чел.</option>
-                        <option value="#">10 - 50 чел.</option>
-                        <option value="#">50 - 100 чел.</option>
-                        <option value="#">свыше 100 чел.</option>
-                    </select>
-                    <select class="feedback-form__select feedback-form__select_small" name="lifts" id="lifts" required>
-                        <option>Подъемники</option>
-                        <option value="#">Красные</option>
-                        <option value="#">Зеленые</option>
-                        <option value="#">Синие</option>
-                        <option value="#">Оранжевые</option>
-                        <option value="#">Серые</option>
-                        <option value="#">Черные</option>
-                        <option value="#">Исправные</option>
-                    </select>
-                    <select class="feedback-form__select feedback-form__select_small" name="places" id="places" required>
-                        <option>Кол-во точек</option>
-                        <option value="#">1 - 3 точки</option>
-                        <option value="#">3 - 5 точек</option>
-                        <option value="#">5 - 10 точек</option>
-                        <option value="#">свыше 10 точке</option>
-                    </select>
+
+                    <div class="feedback-form__select-wrapper feedback-form__select-wrapper_small">
+                        <select class="feedback-form__select feedback-form__select_small" name="city" id="city" required>
+                            <option>Размер города</option>
+                            <option value="#">до 100 тыс.</option>
+                            <option value="#">100 - 500 тыс.</option>
+                            <option value="#">500 тыс. - 1 млн.</option>
+                            <option value="#">свыше 1 млн.</option>
+                        </select>
+                    </div>
+
+                    <div class="feedback-form__select-wrapper feedback-form__select-wrapper_small">
+                        <select class="feedback-form__select feedback-form__select_small" name="people" id="people" required>
+                            <option>Кол-во людей</option>
+                            <option value="#">до 10 чел.</option>
+                            <option value="#">10 - 50 чел.</option>
+                            <option value="#">50 - 100 чел.</option>
+                            <option value="#">свыше 100 чел.</option>
+                        </select>
+                    </div>
+
+                    <div class="feedback-form__select-wrapper feedback-form__select-wrapper_small">
+                        <select class="feedback-form__select feedback-form__select_small" name="lifts" id="lifts" required>
+                            <option>Подъемники</option>
+                            <option value="#">Красные</option>
+                            <option value="#">Зеленые</option>
+                            <option value="#">Синие</option>
+                            <option value="#">Оранжевые</option>
+                            <option value="#">Серые</option>
+                            <option value="#">Черные</option>
+                            <option value="#">Исправные</option>
+                        </select>
+                    </div>
+
+                    <div class="feedback-form__select-wrapper feedback-form__select-wrapper_small">
+                        <select class="feedback-form__select feedback-form__select_small" name="places" id="places" required>
+                            <option>Кол-во точек</option>
+                            <option value="#">1 - 3 точки</option>
+                            <option value="#">3 - 5 точек</option>
+                            <option value="#">5 - 10 точек</option>
+                            <option value="#">свыше 10 точке</option>
+                        </select>
+                    </div>
+
                 </div>
-                <button class="feedback-form__btn btn">Подобрать</button>
+
+                <button class="feedback-form__btn btn">
+                    Подобрать
+                </button>
+
             </form>
         </div>
     </div>
 
+<!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+    <script src="js/owl.carousel.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
