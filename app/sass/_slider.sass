@@ -1,3 +1,7 @@
+$desktop: "(min-width: 1024px)"
+$tablet: "(min-width: 620px) and (max-width: 1023)"
+$phone: "(max-width: 1023px)"
+
 $slider-bg: linear-gradient(to left, #ebf4f9, #f2f7fb)
 
 .slider
@@ -11,3 +15,8 @@ $slider-bg: linear-gradient(to left, #ebf4f9, #f2f7fb)
     .slider__c-wrapper
         width: 1170px
         margin: auto
+
+@media #{$phone}
+    .slider__c-wrapper
+        width: 300px
+        padding: 0 10px

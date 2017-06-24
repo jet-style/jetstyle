@@ -1,5 +1,7 @@
 $select-color: #e9f1f7
 
+// Если честно, стилизовать селекты лучше с помощью какой нибудь jQuery-библиотеки, так красивее. Но через css вроде работает лучше. Если что, я могу и так и так.
+
 .feedback-form
     display: flex
     flex-direction: column
@@ -13,12 +15,19 @@ $select-color: #e9f1f7
     margin-bottom: 20px
 
 .feedback-form__select-wrapper
+    position: relative
     height: 50px
-    padding-left: 10px
     overflow: hidden
     border-radius: 2px
     background: $select-color url('../img/trigger.png') no-repeat right
 
+    p
+        position: absolute
+        margin-left: 10px
+        line-height: 50px
+        vertical-align: middle
+        color: #464646
+        font-size: .9rem
 
 .feedback-form__select-wrapper_big
     width: 770px
@@ -28,11 +37,11 @@ $select-color: #e9f1f7
 
 .feedback-form__select
     height: 50px
+    padding-left: 10px
     border: none
     outline: none
-    background-color: transparent
-    color: #464646
-    font-size: .9rem
+    opacity: 0
+    background: transparent
 
 .feedback-form__select_big
     width: 800px
@@ -43,23 +52,3 @@ $select-color: #e9f1f7
 .feedback-form__btn
     margin-top: 40px
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//

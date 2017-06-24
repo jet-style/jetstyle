@@ -34,6 +34,20 @@
 
 <body>
 
+<!-- header-mob -->
+    <div class="header-mob">
+        <div class="burger-menu">
+            <div class="burger-menu__icon"></div>
+        </div>
+
+        <div class="header-mob__logo"></div>
+
+        <div class="basket basket_mob">
+            <p class="basket__value">4</p>
+            <a href="#" class="basket__icon"></a>
+        </div>
+    </div>
+
 <!-- header -->
     <header class="header">
         <div class="header__c-wrapper">
@@ -58,7 +72,7 @@
 
             <form action="#" method="#" class="search">
                 <a href="#" class="search__btn"></a>
-                <input class="search__input" type="search" id="search-input">
+                <input class="search__input" type="text" id="search-input">
 
             </form>
         </div>
@@ -115,6 +129,7 @@
             <div class="owl-carousel owl-theme">
 
                 <div class="slide">
+
                     <div class="slide__desc">
                         <h1 class="slide__title">
                             Система<br>«jetstyle»
@@ -126,7 +141,8 @@
                             подробнее
                         </button>
                     </div>
-                    <img src="img/slide__diagramm.png" alt="diagramm" class="slide__diagramm">
+
+                    <div class="slide__diagramm"></div>
                 </div>
 
                 <div class="slide">
@@ -141,7 +157,8 @@
                             подробнее
                         </button>
                     </div>
-                    <img src="img/slide__diagramm.png" alt="diagramm" class="slide__diagramm">
+
+                    <div class="slide__diagramm"></div>
                 </div>
 
                 <div class="slide">
@@ -156,7 +173,8 @@
                             подробнее
                         </button>
                     </div>
-                    <img src="img/slide__diagramm.png" alt="diagramm" class="slide__diagramm">
+
+                    <div class="slide__diagramm"></div>
                 </div>
 
                 <div class="slide">
@@ -171,7 +189,8 @@
                             подробнее
                         </button>
                     </div>
-                    <img src="img/slide__diagramm.png" alt="diagramm" class="slide__diagramm">
+
+                    <div class="slide__diagramm"></div>
                 </div>
 
             </div>
@@ -321,6 +340,7 @@
                 <div class="feedback-form__line feedback-form__line_1">
 
                     <div class="feedback-form__select-wrapper feedback-form__select-wrapper_big">
+                        <p></p>
                         <select class="feedback-form__select feedback-form__select_big" name="bisiness" id="bisiness" required>
                         <option>Вид бизнеса</option>
                         <option value="#">Магазин автозапчастей</option>
@@ -338,6 +358,7 @@
                 <div class="feedback-form__line feedback-form__line_2">
 
                     <div class="feedback-form__select-wrapper feedback-form__select-wrapper_small">
+                        <p></p>
                         <select class="feedback-form__select feedback-form__select_small" name="city" id="city" required>
                             <option>Размер города</option>
                             <option value="#">до 100 тыс.</option>
@@ -348,6 +369,7 @@
                     </div>
 
                     <div class="feedback-form__select-wrapper feedback-form__select-wrapper_small">
+                        <p></p>
                         <select class="feedback-form__select feedback-form__select_small" name="people" id="people" required>
                             <option>Кол-во людей</option>
                             <option value="#">до 10 чел.</option>
@@ -358,6 +380,7 @@
                     </div>
 
                     <div class="feedback-form__select-wrapper feedback-form__select-wrapper_small">
+                        <p></p>
                         <select class="feedback-form__select feedback-form__select_small" name="lifts" id="lifts" required>
                             <option>Подъемники</option>
                             <option value="#">Красные</option>
@@ -371,12 +394,13 @@
                     </div>
 
                     <div class="feedback-form__select-wrapper feedback-form__select-wrapper_small">
+                        <p></p>
                         <select class="feedback-form__select feedback-form__select_small" name="places" id="places" required>
                             <option>Кол-во точек</option>
                             <option value="#">1 - 3 точки</option>
                             <option value="#">3 - 5 точек</option>
                             <option value="#">5 - 10 точек</option>
-                            <option value="#">свыше 10 точке</option>
+                            <option value="#">Длинный ответ, с которым тоже все нормально.</option>
                         </select>
                     </div>
 
@@ -394,6 +418,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
     <script src="js/owl.carousel.js" defer></script>
     <script src="js/main.js" defer></script>
+
 </body>
 
 </html>
