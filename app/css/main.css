@@ -737,7 +737,7 @@
   .slide .slide__diagramm {
     position: absolute;
     top: 130px;
-    width: 260px;
+    min-width: 260px;
     height: 265px;
     background: url("../img/slide__diagramm_mob.png") no-repeat center;
     background-size: contain;
